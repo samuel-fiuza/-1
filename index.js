@@ -137,4 +137,104 @@ const numero2 = Number(prompt("Digite um número:"));
 console.log(numero2 + 5);
 
 //Operadores Aritiméticos
+console.log(2 + 3) //soma
+console.log(5 - 2) //subtracão
+console.log(4 * 2) //mutiplicacão
+console.log(10 / 2) //divisão
+console.log(10 % 3) //resto da divisão
+console.log(2 ** 3) //potencia
 
+//segue principios matematicos
+console.log(2 + 3 * 4);
+console.log((2 + 3) *4);
+
+//operadores de comparacão
+console.log(5 == "5"); //true -> valores são iguais (após conversão)
+console.log(5 == 5); //true -> valores são iguais
+
+console.log(5 === "5"); //false -> tipos diferentes (number vs string)
+console.log(5 === 5); //true -> valor E tipos iguais
+
+console.log(5 != "5"); //false -> valores NÃO são diferentes (após a conversão)
+console.log(5 != 7); //verdadeiro -> valores são diferentes
+
+console.log(5 !== "5"); //verdadeiro ->SÃO diferentes (tipos diferentes)
+console.log(5 !== 5); //false -> NÃO são diferentes (identicos)
+
+console.log(!true);
+console.log(!false);
+
+const idade3 = 15;
+console.log(idade3 >= 18);
+console.log(!idade3 >= "18");
+
+const NOME3 = "";
+const nomeVazio = NOME3 === ""
+console.log(nomeVazio)
+
+const nomeNaoVazio = NOME3 !== "";
+
+console.log(!!true);
+
+//Estrutura Sequencial (Entrada -> Processamento -> Saída)
+
+//Entrada
+const nome6 = prompt("Digite seu nome:")
+//Processamento
+//Saída
+console.log("Olá," + nome6 + "!");
+
+//Entrada Soma de dois números
+const n1 = Number(prompt("Digite o rpimeiro número")); 
+const n2 = Number(prompt("Digite o segundo número"));
+//processamento
+const soma = n1 + n2;
+//Sáida
+console.log ("Resultado: " + soma);
+
+//Dobro de um número
+const n3 = Number(prompt("digite um número"));
+const dobro = n3 * 2;
+alert(`O dobro de ${n3} é ${dobro}`)
+
+//Média de duas notas
+const nota1 = Number(prompt("Primeira Nota: "));
+const nota2 = Number(prompt("Segunda Nota: "));
+
+const media = (nota1 + nota2) / 2
+
+alert(`A média da nota: ${media.toFixed(1)}`)
+if (media <= 5) {
+    alert(`Parabéns, voce não é inteligente, está reprovado`)
+ } else {
+    alert(`Parabéns, sua média é ${media} voce passou!`)
+};
+
+const anos = Number(prompt("Dígite sua idade em anos: "));
+const meses = anos * 12;
+const dias = anos * 365;
+const horas = anos * 24;
+const minutos = anos * 60;
+console.log(`idade informada: ${anos} anos`);
+console.log("--------------------");
+console.log(`meses: ${meses}`);
+console.log(`dias: ${dias}`);
+console.log(`horas: ${horas}`);
+console.log(`minutos: ${minutos}`);
+alert(`meses: ${meses} dias: ${dias} horas: ${horas} minutos: ${minutos}`);
+
+//Celsius -> Fahrenheit
+//Converter Temperatura de Celsius para Fahrenheint
+
+//Fórmula: F = (C x 9/5) + 32
+
+const Celsius = Number(prompt("Temperatura em Celsius:"));
+const Fahrenheint = (Celsius * 9/5) + 32;
+console.log(`Temperatura em C informada ${Celsius}C`);
+console.log(`temperatura em Fahrenheints: ${Fahrenheint}`);
+alert(`Temperatura em F: ${Fahrenheint}F`);
+if (Fahrenheint >= 77) {
+    alert(`tá quente meu patrão`)
+} else {
+    alert(`tá suave meu nego`)
+}
