@@ -71,7 +71,7 @@ if ((ehAdmin && senhaCorreta) || (ehGerente && senhaCorreta)) {
 if ((ehAdmin || ehGerente) && senhaCorreta) {
     console.log(`Acesso liberado`)
 } else {
-    console.log(`Acesso liberado`)
+    console.log(`Acesso Negado`)
 }
 
 const cons = prompt`digite nome de usuario`
