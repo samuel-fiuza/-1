@@ -107,3 +107,24 @@ if ((login === usuario) && (senhaLog === senha)) {
 } else {
     console.log(`Acesso negado`)
 }
+
+//Nivel avançado
+//Conversão de notas para conceito
+const Nota = Number(prompt(`Dígite um Número de 0 a 100`))
+let = Nota >= 90
+let = Nota >= 80
+let = Nota >= 70
+let = Nota >= 60
+let = Nota < 60
+if (Nota >= 90) {
+    console.log(`Nota A`)
+} else if (Nota >= 80) {
+    console.log(`Nota B`)
+} else if (Nota >= 70) {
+    console.log(`Nota C`)
+} else if (Nota >= 60) {
+    console.log(`Nota D`)
+} else {
+    console.log(`Nota F`)
+}
+//não entendi fazer em casa
