@@ -84,3 +84,26 @@ if (operacao === `+`) {
 } else {
     console.log(`a divisão de ${n4} / ${n5} = ${divisao}`)
 }
+
+//desconto em compras
+const valorCompra = Number(prompt(`Insira o valor da compra`))
+const desconto = valorCompra * 0.10
+const valorTotal = valorCompra - desconto
+if (valorCompra >= 100) {
+    console.log(`o valor total foi descontado ${desconto}, valor total da compra foi ${valorTotal}`)
+} else {
+    console.log(`o valor da compra permaneceu o mesmo ${valorCompra}`)
+}
+
+//Sistema de Login simples
+const usuario = `João`
+const senha = `1234`
+
+const login = prompt(`Dígite o nome do usuario: `)
+const senhaLog = prompt(`Dígite a senha de acesso: `)
+
+if ((login === usuario) && (senhaLog === senha)) {
+    console.log(`Acesso concebido`)
+} else {
+    console.log(`Acesso negado`)
+}
