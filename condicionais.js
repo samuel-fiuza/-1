@@ -153,7 +153,7 @@ if (semaforo === verde) {
 const peso = Number(prompt(`Digite seu Peso(Kg)`))
 const Altura = Number(prompt(`Altura (m)`))
 
-if (Number.isNaN(peso) || Number.isNaN(altura)) {
+if (Number.isNaN(peso) || Number.isNaN(Altura)) {
     console.log(`Digite apenas números`)
 } else if (peso <= 0 || Altura <= 0) {
     console.log(`Peso e altura devem ser positivo`)

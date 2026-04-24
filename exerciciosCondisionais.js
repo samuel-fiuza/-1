@@ -116,15 +116,43 @@ let = Nota >= 80
 let = Nota >= 70
 let = Nota >= 60
 let = Nota < 60
-if (Nota >= 90) {
+if (Nota >= 90 && Nota <= 100) {
     console.log(`Nota A`)
-} else if (Nota >= 80) {
+} else if (Nota >= 80 && Nota <= 89) {
     console.log(`Nota B`)
-} else if (Nota >= 70) {
+} else if (Nota >= 70 && Nota <= 79) {
     console.log(`Nota C`)
-} else if (Nota >= 60) {
+} else if (Nota >= 60 && Nota <= 69) {
     console.log(`Nota D`)
 } else {
     console.log(`Nota F`)
 }
-//não entendi fazer em casa
+//ano bissexto
+const anoBi = Number(prompt(`Dígite um ano: `))
+if ((anoBi % 4 === 0 && anoBi % 100 !== 0) || (anoBi % 400 === 0)) {
+    console.log(`${anoBi} é um ano bissexto`)
+} else {
+    console.log(`${anoBi} não é um ano bissexto`)
+}
+//Calculo de IMC
+const peso = Number(prompt(`Dígite seu peso(kg)`))
+const altura = Number(prompt(`Digíte sua altura(m)`))
+if (Number.isNaN(peso) || Number.isNaN(altura)) {
+    console.log(`Dígite apenas números`)
+} else if (peso <= 0 || altura <= 0) {
+    console.log(`peso e altura devem ser positivo`)
+} else if (altura > 3) {
+    console.log(`dígite uma altura em metros`)
+} else {
+    const IMC = peso / (altura ** 2)
+    console.log(`Seu IMC ${IMC.toFixed(2)}`)
+    if (IMC < 18.5) {
+        console.log(`Abaixo do peso`)
+    } else if (IMC < 25) {
+        console.log (`Peso normal`)
+    } else if (IMC > 30) {
+        console.log (`Sobrepeso`)
+    } else {
+        console.log(`Obesidade`)
+    }
+}
