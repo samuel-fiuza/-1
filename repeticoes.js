@@ -80,7 +80,7 @@ do {
     console.log(`isso vai aparecer uma vez`)
 } while (y < 5);
 */
-
+/*
 //Menu interativo
 let opcao;
 
@@ -130,3 +130,138 @@ do {
         console.log(`precisou de ${tentativas} tentativas`)
     }
 } while (palpite !== numeroSecreto);
+*/
+/*
+//For
+console.log(`Contando de 1 a 10\n`)
+for (let i = 1; i <= 10; i++) {
+    console.log(`Número: ${i}`)
+}
+*/
+
+//Tabuada
+/*
+const n1 = Number(prompt(`Tabuada de qual número?`))
+if (Number.isNaN(n1)) {
+    console.log(`número invalido`)
+} else {
+    console.log(`\n Tabuada do ${n1}\n`)
+
+    for (let i = 1; i <= 10; i++) {
+        const resultado = n1 * i
+    }
+    console.log(`${n1} x ${i} = ${resultado}`)
+}
+*/
+
+//Números pares de (0 a 20)
+/*
+for (let i = 0; i <= 20; i += 2) {
+    console.log(i)
+}
+//outra frma
+for (let i2 = 0; i2 <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i2)
+    }
+}
+*/
+
+//contagem regressiva em For
+/*
+console.log(`Contagem regressiva`)
+for (let i = 10; i >= 0; i--) {
+    console.log(`${i}...`)
+}
+*/
+
+//Piramide (ou For dentro de For)
+/*
+const altura = 5
+for (let linha = 1; linha <= altura; linha++) {
+    let asteriscos = ``
+
+    for (let i = 1; i <= linha; i++) {
+        asteriscos += `*`
+    }
+    console.log(asteriscos)
+}
+*/
+
+//Array (lista)
+/*
+const frutas = [`Maçà`, `Banana`, `Laranja`, `Uva`]
+
+console.log(frutas[0])
+console.log(frutas[1])
+console.log(frutas[2])
+console.log(frutas[3])
+
+console.log(frutas.length)
+
+//for of
+for (const a of frutas) {
+    console.log(`-${frutas}`)
+}
+*/
+
+//soma de tods os números do array
+/*
+const numeros = [10, 25, 8, 42, 15, 7];
+let soma = 0;
+for (const num of numeros) {
+    soma += num;
+}
+console.log(`${soma}`)
+*/
+
+//Objetos
+/*
+const pessoa = {
+    nome: `Lucas`,
+    idade: 35,
+    cidade: `Santo André`,
+    profissao: `Professor`,
+}
+
+console.log(pessoa.nome)
+//maneira que só puxa uma string
+console.log(pessoa[`idade`])
+
+//For in
+
+                    aqui em baixo é qualquer objeto no geral
+for (const chave in pessoa) {
+
+}
+
+const aluno = {
+    nome: `Maria Silva`,
+    matricula: `20223401`,
+    curso: `Desenvolvedor web`,
+    nota: 9.5
+}
+
+console.log(`Dados do Aluno:\n`)
+for (const chave in aluno) {
+    const valor = aluno[chave]
+    console.log(`${chave}: ${valor}`)
+}
+*/
+//Estoque de Produtos
+const estoque = {
+    "notebook": 15,
+    "mouse": 50,
+    "teclado": 30,
+    "Monitor": 8,
+    "Webcam": 22,
+}
+console.log(`Estoque:\n`);
+for (const produto in estoque) {
+    const quantidade = estoque[produto]
+    if (quantidade < 10) {
+        console.log(`${produto}: ${quantidade} unidades (estoque baixo)`)
+    } else {
+        console.log(`${produto}: ${quantidade}: unidades`)
+    }
+}
