@@ -159,7 +159,7 @@ if (Number.isNaN(n1)) {
 for (let i = 0; i <= 20; i += 2) {
     console.log(i)
 }
-//outra frma
+//outra forma
 for (let i2 = 0; i2 <= 20; i++) {
     if (i % 2 === 0) {
         console.log(i2)
@@ -249,6 +249,7 @@ for (const chave in aluno) {
 }
 */
 //Estoque de Produtos
+/*
 const estoque = {
     "notebook": 15,
     "mouse": 50,
@@ -265,3 +266,119 @@ for (const produto in estoque) {
         console.log(`${produto}: ${quantidade}: unidades`)
     }
 }
+*/
+//Carrinho de compras
+/*
+//Array por falta de banco de dados
+const carrinho = [
+    {produto: "Camiseta", preco: 49.90, quantidade: 2},
+    {produto: "Calça Jeans", preco: 129.90, quantidade: 1},
+    {produto: "Tenis", preco: 499.90, quantidade: 1},
+]
+
+let total = 0
+
+console.log(`Carrinho de COmpras: \n`)
+for (const item of carrinho) {
+    const subtotal = item.preco * item.quantidade
+
+    total += subtotal
+
+    console.log(`${item.produto} (${item.quantidade}x) - R$ ${subtotal.toFixed(2)}`)
+}
+
+console.log(`\n` + `=`.repeat(40))
+console.log(`TOTAL: R$ ${total.toFixed(2)}`)
+*/
+
+//break
+/*
+const numeros = [5, 6, 7, 12, 9, 23, 19, 8, 25, 91, 36]
+
+const procurado = 19
+
+console.log(`Procurando o número`, procurado)
+
+for (const num of numeros) {
+    console.log(`Verificando:`, num)
+
+    if (num === procurado) {
+        console.log(`encontrado!!!`)
+        break
+    }
+}
+console.log(`loop terminou`)
+*/
+
+//Senha com limite de 3 tentativas
+/*
+const senhaCorreta = `abc123`
+
+const maxTentativas = 3
+
+for (let tentativa = 1; tentativa <= maxTentativas; tentativa++)
+    {
+    const senha = prompt(`Tentativa ${tentativa}/${maxTentativas} - Digite sua senha`)
+    if (senha === senhaCorreta) {
+        console.log(`Acesso liberado`)
+        break
+    } else {
+        console.log(`Senha incorreta`)
+
+        if (tentativa === maxTentativas) {
+            console.log(`Conta bloqueada`)
+        }
+    }
+}
+*/
+
+//continue
+/*
+for (let i =1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        continue
+    }
+    console.log(i)
+}
+*/
+
+//Sistema de separação de notas
+/*
+const alunos = [
+    {nome: "Ana", nota: 8.5},
+    {nome: "Bruno", nota: 5.0},
+    {nome: "Carlos", nota: 9.0},
+    {nome: "Diana", nota: 4.5},
+    {nome: "Eduardo", nota: 7.5},
+]
+console.log(`Alunos Aprovados\n`)
+for (const aluno of alunos) {
+    if (aluno.nota < 7) {
+        continue
+    }
+    console.log(`${aluno.nome} - Nota: ${aluno.nota}`)
+}
+*/
+
+//Separação de Vogais
+/*
+const frase = prompt(`Digite uma frase:`)
+
+const vogais = `aeiouAEIOU`
+
+let contador = 0
+
+let vogaisEncontradas = []
+
+for (const letra of frase) {
+    if (vogais.includes(letra)) {
+        contador++
+        vogaisEncontradas.push(letra)
+    }
+}
+console.log(`\n Frase: "${frase}"`)
+console.log(`vogais encontrdas: ${contador}`)
+console.log(`Vogais encontradas: ${vogaisEncontradas}`)
+*/
+
+//atividades de laços de repetiçào
