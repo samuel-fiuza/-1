@@ -28,7 +28,7 @@ for(let iN = 1; iN <= numN; iN++) {
 console.log(`Soma de N números naturais: ${soma}`)
 
 //Exibir os números pares de 1 a 50
-for (let iP = 0; iP <= 50; iP++) {
+for (let iP = 1; iP <= 50; iP++) {
     if (iP % 2 === 0) {
         console.log(iP)
     }
@@ -53,3 +53,14 @@ do {
         console.log(`Precisou de ${tentativas} tentativas`)
     }
 } while (paplite !== numeroSecreto)
+
+    //Contagem regressiva
+    let Regressiva = 20
+    while (Regressiva > 0) {
+        console.log(`${Regressiva}...`)
+        tempo--
+    }
+    console.log(`Acabou :>`)
+
+    //Niveis Avançados
+    
