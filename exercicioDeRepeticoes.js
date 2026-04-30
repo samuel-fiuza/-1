@@ -34,7 +34,14 @@ for (let iP = 1; iP <= 50; iP++) {
     }
 }
 
+//contagem regressiva
+let CR = Number(prompt)
+while (CR > 0) {
+    console.log(`${CR}...`)
+    CR--
+}
 //advinhe um número de 1 a 100
+/*
 const numeroSecreto = Math.floor(Math.random() * 100) + 1
 let palpite
 let tentativas
@@ -52,15 +59,28 @@ do {
         console.log(`Acertou`)
         console.log(`Precisou de ${tentativas} tentativas`)
     }
-} while (paplite !== numeroSecreto)
+} while (palpite !== numeroSecreto);
+*/
+//Nível Avançado
+//1 Soma do dígitos de um número
 
-    //Contagem regressiva
-    let Regressiva = 20
-    while (Regressiva > 0) {
-        console.log(`${Regressiva}...`)
-        tempo--
-    }
-    console.log(`Acabou :>`)
+let SNN = Number(prompt(`Dígite um número interio positivo`))
 
-    //Niveis Avançados
-    
+let somaN = 0
+while (SNN > 0) {
+    let digito = SNN % 10;
+    somaN += digito;
+
+    SNN = Math.floor(SNN/10);
+}
+console.log(`Somas do dígitos: ${somaN}`)
+
+//Fatorial de um número
+let numero = Number(prompt(`digite um número calabreso`))
+let fatorial = 1
+for (let  iF = 1; iF <= numero; iF++) {
+    fatorial *= iF
+}
+console.log(`${numero}! = ${fatorial}`)
+
+//Inverter um número
